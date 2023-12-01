@@ -1,0 +1,78 @@
+/* 
+font-family: 'Hedvig Letters Sans', sans-serif;
+font-family: 'Poppins', sans-serif; 
+*/
+*{
+    font-family: 'Hedvig Letters Sans', sans-serif;
+}
+:root{
+    --r: #000000;
+    --b: rgb(39, 149, 153);
+    --v: rgb(153, 20, 113);
+    --w: rgb(255, 255, 255);
+}
+h1 ,h2 ,h3 ,h4 ,h5 ,.h1 ,.h2 ,.h3 ,.h4 ,.h5{
+    font-family: 'Poppins', sans-serif; 
+}
+.text-r{
+    color: var(--r);
+}
+.text-w{
+    color: var(--w);
+}
+.text-v{
+    color: var(--v);
+}
+.bg-r{
+    background-color: var(--r);
+}
+.bg-b{
+    background-color: var(--b);
+}
+.bg-v{
+    background-color: var(--v);
+}
+.bg-w{
+    background-color: var(--w);
+}
+
+/* navbar */
+.logo{
+    height: 65px;
+    width: 83px;
+}
+.logo2{
+height: 65px;
+width: 140px;
+}
+.navbar{
+    transition: 0.6s;
+    height: 86px;
+}
+#containerfluid{
+    transition: 0.6s;
+}
+.nav-link{
+    margin-left: 8px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 40px;
+}
+.nav-link:hover{
+    background-color: #11111179;
+    color: aliceblue;
+    scale: 0.9;
+    text-align: center;
+}
+/* header */
+.header{
+    background-image: linear-gradient(rgba(23,23,23,0.8), rgba(23,23,23,0.5)) ,url(./media/sfondo1.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    background-size: cover;
+}
+#button-addon2{
+    color: white;
+}
