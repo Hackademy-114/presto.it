@@ -3,13 +3,14 @@ font-family: 'Hedvig Letters Sans', sans-serif;
 font-family: 'Poppins', sans-serif; 
 */
 *{
-    font-family: 'Hedvig Letters Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 :root{
     --r: #000000;
     --b: rgb(39, 149, 153);
     --v: rgb(153, 20, 113);
     --w: rgb(255, 255, 255);
+    --a: rgb(186, 134, 29);
 }
 h1 ,h2 ,h3 ,h4 ,h5 ,.h1 ,.h2 ,.h3 ,.h4 ,.h5{
     font-family: 'Poppins', sans-serif; 
@@ -34,6 +35,9 @@ h1 ,h2 ,h3 ,h4 ,h5 ,.h1 ,.h2 ,.h3 ,.h4 ,.h5{
 }
 .bg-w{
     background-color: var(--w);
+}
+.bg-a{
+    background-color: var(--a);
 }
 
 /* navbar */
@@ -75,4 +79,26 @@ width: 140px;
 }
 #button-addon2{
     color: white;
+}
+
+
+/* numeri incrementali */
+.bg-col{
+    background-color: black;
+    padding: 50px;
+    height: 30vh;
+}
+.number{
+    color: white;
+    font-weight: 700;
+    font-size: xx-large;
+    margin-right: 10px;
+}
+.lead{
+    margin-right: 50px;
+    color: white;
+}
+.img-num{
+    height: 50%;
+    width: 10vh;
 }
