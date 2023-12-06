@@ -41,17 +41,17 @@ window.addEventListener('scroll', ()=>{
         containerfluid.classList.add('bg-r');
     }
 })
-    function createInterval(total, finalNumber, time) {
-        let counter = 0;
-        let interval = setInterval(()=>{
-            if (counter< total) {
-                counter++;
-                finalNumber.innerHTML = counter;
-            }else{
-                clearInterval(interval)
-            }
-        }, time)
-    }
+function createInterval(total, finalNumber, time) {
+    let counter = 0;
+    let interval = setInterval(()=>{
+        if (counter< total) {
+            counter++;
+            finalNumber.innerHTML = counter;
+        }else{
+            clearInterval(interval)
+        }
+    }, time)
+}
 // intersectionObserver()
 let check = true;
 let observer = new IntersectionObserver((entries)=>{
@@ -68,3 +68,17 @@ let observer = new IntersectionObserver((entries)=>{
     })
 })
 observer.observe(thirdNumber)
+
+
+
+
+
+
+
+// <!-- Initialize Swiper -->
+var swiper = new Swiper(".mySwiper", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

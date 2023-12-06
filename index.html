@@ -1,83 +1,183 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Presto.it</title>
-    <!-- cdn bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-    <!-- cdn css -->
-    <link rel="stylesheet" href="style.css">
-
-  </head>
-  <body>
-    
-    <nav id="navbar" class="navbar navbar-expand-lg bg-r sticky-top">
-        <div id="containerfluid" class="container-fluid bg-r">
-          <a class="navbar-brand" href="#"><img class="logo" id="logo" src="./media/onda-arancione.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link text-w" aria-current="page" href="#">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-w" href="#">LINK</a>
-              </li>  
-              <li class="nav-item">
-                <a class="nav-link text-w" href="#">LINK-2</a>
-              </li>            
-            </ul>  
-
-            <div class="logo2"></div>         
-          </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Presto.it</title>
+  
+  <!-- cdn swiper -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <!-- cdn bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  <!-- cdn css -->
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  
+  <nav id="navbar" class="navbar navbar-expand-lg bg-r sticky-top">
+    <div id="containerfluid" class="container-fluid bg-r">
+      <a class="navbar-brand" href="#"><img class="logo" id="logo" src="./media/onda-arancione.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-w" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-w" href="#">LINK</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link text-w" href="#">LINK-2</a>
+          </li>            
+        </ul>  
+        
+        <div class="logo2"></div>         
+      </div>
+    </div>
+  </nav>
+  
+  <!-- header -->
+  
+  <div class="container-fluid">
+    <div id="row" class="row justify-content-center align-items-center text-center header">
+      <div class="col-10 col-md-7 col-lg-5">
+        <h1 class="text-w" >Presto.it</h1>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Cerca qualcosa sul nostro sito" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
         </div>
-      </nav>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <!-- numeri incrementali -->
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 numeri-incrementali d-flex justify-content-center align-items-center bg-col">
+        <!-- numeri -->
+        <img class="img-num" src="./media/tavola-numeri.png" alt=""><p class="lead"><span id="firstNumber" class="number">0</span>  PRODOTTI VENDUTI</p>
+        <img class="img-num" src="./media/clienti-sodd.png"><p class="lead"><span id="secondNumber" class="number">0</span>  CLIENTI SODDISFATTI</p>
+        <img class="img-num" src="./media/commenti.png" alt=""><p class="lead"><span id="thirdNumber" class="number">0</span>  RECENSIONI</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- recensioni-swiper -->
+  <div class="container contSwiper">
+    <div class="row">
+      <h2 class="tit-swip">Recensioni</h2>
+      <div class="col colSwiper">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper d-flex">
 
-      <!-- header -->
-
-      <div class="container-fluid">
-        <div id="row" class="row justify-content-center align-items-center text-center header">
-          <div class="col-10 col-md-7 col-lg-5">
-            <h1 class="text-w" >Presto.it</h1>
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Cerca qualcosa sul nostro sito" aria-label="Recipient's username" aria-describedby="button-addon2">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+            <div class="swiper-slide">
+              <h3 class="tit">User213</h3>
+              <p class="par">I really lik this Shop!</p>
+            </div>
+            <div class="swiper-slide">
+              <h3 class="tit">Giovanna</h3>
+              <p class="par">Great SurfBoards! I had a great time in this shopOnline.</p>
+            </div>
+            <div class="swiper-slide">
+              <h3 class="tit">Noah</h3>
+              <p class="par">Great experience, wetsuits and surfing objects of many kinds.</p>
+            </div>
+            <div class="swiper-slide">
+              <h3 class="tit">Jacopo</h3>
+              <p class="par">I don't really like items, very high prices for used items.</p>
+            </div>
+            <div class="swiper-slide">
+              <h3 class="tit">hornest</h3>
+              <p class="par">I really lik this Shop!</p>
+            </div>
+            <div class="swiper-slide">
+              <h3 class="tit">User555</h3>
+              <p class="par">I don't really like items, very high prices for used items.</p>
+            </div>
+            <div class="swiper-slide">
+              <h3 class="tit">ami88</h3>
+              <p class="par">Great SurfBoards! I had a great time in this shopOnline.</p>
+            </div>
+            <div class="swiper-slide">
+              <h3 class="tit">Luca</h3>
+              <p class="par">Really GOOD!!!</p>
+            </div>
+            <div class="swiper-slide">
+              <h3 class="tit">March</h3>
+              <p class="par">Not Bad...</p>
             </div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
+    </div>
+  </div>
 
-      
+  <!-- footer -->
 
-      <!-- numeri incrementali -->
-
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col d-flex justify-content-center align-items-center bg-col">
-             <!-- numeri -->
-             <img class="img-num" src="./media/tavola-numeri.png" alt=""><p class="lead"><span id="firstNumber" class="number">0</span>  PRODOTTI VENDUTI</p>
-             <img class="img-num" src="./media/clienti-sodd.png"><p class="lead"><span id="secondNumber" class="number">0</span>  CLIENTI SODDISFATTI</p>
-             <img class="img-num" src="./media/commenti.png" alt=""><p class="lead"><span id="thirdNumber" class="number">0</span>  RECENSIONI</p>
+  <div class="container-fluid">
+    <div class="row bg-foot">
+      <div class="col">
+        <footer class="footer">
+          <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
           </div>
-        </div>
+          <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a></li>
+          </ul>
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+      
+          </ul>
+          <p>&copy;2023 Presto.it | Enjoy the Ocean and your Waves</p>
+        </footer>
       </div>
+    </div>
+  </div>
 
-
-
-
-
-
-
-
-    <div style="height: 2000px;"></div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <!-- cdn JS -->
-    <script src="main.js"></script>
-  </body>
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- JS swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- JS Boot -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!-- JS custom -->
+  <script src="main.js"></script>
+</body>
 </html>
